@@ -437,7 +437,7 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden1" data-modal>
       <div class="modal">
         <button type="button" class="button-icon-close" data-modal-close>
           <svg class="icon-close">
@@ -448,25 +448,47 @@
         <form class="modal-form">
           <label>
             Имя
-            <input type="text" name="name" />
+            <div class="form-input-wrapper">
+              <input type="text" name="name" class="form-input" />
+              <svg class="modal-form-icon">
+                <use href="./img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
           </label>
-          <label>
-            Телефон
-            <input type="tel" name="phone_number" />
-          </label>
-          <label>
-            Почта
-            <input type="email" name="email" />
-          </label>
+          <div class="modal-form-wrapper">
+            <label>
+              Телефон
+              <div class="form-input-wrapper">
+                <input type="tel" name="phone_number" class="form-input" />
+                <svg class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-wrapper">
+            <label>
+              Почта
+              <div class="form-input-wrapper">
+                <input type="email" name="email" class="form-input" />
+                <svg class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
           <label>
             Комментарий
             <textarea name="feedback" placeholder="Введите текст"></textarea>
           </label>
-          <label>
-            <input type="checkbox" name="dogovor" value="dogovor" />
-            Music
+          <label class="chekbox">
+            <input type="checkbox" name="dogovor" value="accept" required />
+            <span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a>
+            </span>
           </label>
-          <button type="submit">Submit</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
       </div>
     </div>
