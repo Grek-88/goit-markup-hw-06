@@ -511,6 +511,21 @@ hr {
 .list-no-style .join-icon:focus {
   background: var(--hover-accent);
 }
+
+.footer form {
+  margin-left: 93px;
+}
+
+.footer .button {
+  border: none;
+  margin-left: 12px;
+}
+
+.footer .button svg {
+  width: 24px;
+  height: 24px;
+}
+
 /*=============/footer==============*/
 
 /*=============Modal==============*/
