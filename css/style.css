@@ -16,6 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -199,14 +200,12 @@ hr {
 .about-title {
   font-weight: bold;
   line-height: 1.1428;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--fonts-accent-color);
 }
 
 .about-text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-font-color);
 }
 
@@ -245,7 +244,6 @@ hr {
   font-size: 36px;
   line-height: 1.1666;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--fonts-accent-color);
 
   margin-top: 0;
@@ -268,7 +266,6 @@ hr {
   line-height: 1.1428;
   text-align: center;
   padding-top: 27px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--color-light);
@@ -289,7 +286,6 @@ hr {
   font-size: 36px;
   line-height: 1.1666;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--fonts-accent-color);
 
   margin-top: 0;
@@ -300,7 +296,6 @@ hr {
 
   font-size: 16px;
   line-height: 1.1875;
-  letter-spacing: 0.03em;
 }
 
 .team-name {
@@ -443,7 +438,6 @@ hr {
 .address .contacts:focus {
   font-style: normal;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-light);
   opacity: 0.6;
 }
@@ -467,7 +461,6 @@ hr {
 .join {
   font-size: 14px;
   line-height: 1.1428;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--color-light);
@@ -516,14 +509,57 @@ hr {
   margin-left: 93px;
 }
 
-.footer .button {
+.subs-form-flex .button {
   border: none;
+  margin-top: 0;
   margin-left: 12px;
+  height: 50px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  cursor: pointer;
 }
 
-.footer .button svg {
+.subs-form-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.subs-form-flex .button svg {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
+}
+
+.subs-form-flex label {
+  position: absolute;
+  z-index: 1;
+  left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subs-form-flex input {
+  width: 358px;
+  height: 50px;
+  background: var(--color-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding-left: 65px;
+  color: var(--color-light);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--color-background) inset;
+  -webkit-text-fill-color: var(--color-light);
 }
 
 /*=============/footer==============*/
@@ -552,7 +588,7 @@ hr {
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   background-color: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -561,6 +597,8 @@ hr {
 
   transform: translate(-50%, -50%) scale(0);
   transition: var(--transition-duration-function);
+
+  padding: 40px;
 }
 
 .backdrop:not(.is-hidden) .modal {
@@ -586,6 +624,13 @@ hr {
   height: 18px;
 }
 
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /*=============/Modal==============*/
 
 /*=============Portfolio.html==============*/
@@ -593,7 +638,6 @@ hr {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
 
   display: flex;
   justify-content: center;
@@ -641,7 +685,6 @@ hr {
 .products-text {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   color: var(--primary-font-color);
 
   margin-top: 4px;
@@ -693,7 +736,6 @@ hr {
 
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
   color: var(--color-light);
 
   background-color: rgba(33, 150, 243, 0.9);
