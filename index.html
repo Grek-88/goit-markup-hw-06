@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ5</title>
+    <title>ДЗ6</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -422,6 +422,19 @@
             </li>
           </ul>
         </div>
+        <form name="subs-form" autocomplete="on">
+          <h3 class="join">Подпишитесь на рассылку</h3>
+          <div class="subs-form-flex">
+            <label for="subs-email" class="subs-form-label">E-mail</label>
+            <input type="email" name="email" id="subs-email" />
+            <button type="submit" class="button">
+              Подписаться
+              <svg>
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -431,6 +444,65 @@
             <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="modal-form">
+          <label class="form-label">
+            Имя
+            <div class="form-input-wrapper">
+              <input type="text" name="name" class="form-input" />
+              <svg class="modal-form-icon">
+                <use href="./img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <div class="modal-form-wrapper">
+            <label class="form-label">
+              Телефон
+              <div class="form-input-wrapper">
+                <input type="tel" name="phone_number" class="form-input" />
+                <svg class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-wrapper">
+            <label class="form-label">
+              Почта
+              <div class="form-input-wrapper">
+                <input type="email" name="email" class="form-input" />
+                <svg class="modal-form-icon">
+                  <use href="./img/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <label class="form-label">
+            Комментарий
+            <textarea
+              class="form-textarea"
+              name="feedback"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="chekbox">
+            <input
+              class="chekbox-input"
+              type="checkbox"
+              name="dogovor"
+              value="accept"
+              required
+            />
+            <svg class="modal-chekbox-icon">
+              <use href="./img/symbol-defs.svg#icon-check"></use>
+            </svg>
+            <span class="modal-chekbox-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="modal-chekbox-text-link">Условия договора</a>
+            </span>
+          </label>
+          <button type="submit" class="button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./madal.js"></script>
