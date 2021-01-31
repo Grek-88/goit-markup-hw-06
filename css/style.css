@@ -678,6 +678,12 @@ hr {
 .modal-form textarea {
   height: 120px;
   padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+}
+.modal-form textarea:focus {
+  border: 1px solid var(--hover-accent);
+  outline: none;
 }
 
 .modal-form .chekbox {
@@ -686,6 +692,30 @@ hr {
   justify-content: center;
 
   margin-bottom: 30px;
+
+  font-size: 14px;
+}
+
+.chekbox svg {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  fill: none;
+}
+
+.chekbox-input:checked + svg {
+  border: none;
+  fill: var(--color-light);
+  background-color: var(--hover-accent);
+}
+
+.chekbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .modal-form .chekbox span {

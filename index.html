@@ -437,7 +437,7 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden1" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-icon-close" data-modal-close>
           <svg class="icon-close">
@@ -482,7 +482,16 @@
             <textarea name="feedback" placeholder="Введите текст"></textarea>
           </label>
           <label class="chekbox">
-            <input type="checkbox" name="dogovor" value="accept" required />
+            <input
+              class="chekbox-input"
+              type="checkbox"
+              name="dogovor"
+              value="accept"
+              required
+            />
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-check"></use>
+            </svg>
             <span>
               Соглашаюсь с рассылкой и принимаю
               <a href="#">Условия договора</a>
