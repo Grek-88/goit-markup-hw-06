@@ -425,7 +425,7 @@
         <form name="subs-form" autocomplete="on">
           <h3 class="join">Подпишитесь на рассылку</h3>
           <div class="subs-form-flex">
-            <label for="subs-email">E-mail</label>
+            <label for="subs-email" class="subs-form-label">E-mail</label>
             <input type="email" name="email" id="subs-email" />
             <button type="submit" class="button">
               Подписаться
@@ -446,7 +446,7 @@
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form">
-          <label>
+          <label class="form-label">
             Имя
             <div class="form-input-wrapper">
               <input type="text" name="name" class="form-input" />
@@ -456,7 +456,7 @@
             </div>
           </label>
           <div class="modal-form-wrapper">
-            <label>
+            <label class="form-label">
               Телефон
               <div class="form-input-wrapper">
                 <input type="tel" name="phone_number" class="form-input" />
@@ -467,7 +467,7 @@
             </label>
           </div>
           <div class="modal-form-wrapper">
-            <label>
+            <label class="form-label">
               Почта
               <div class="form-input-wrapper">
                 <input type="email" name="email" class="form-input" />
@@ -477,9 +477,13 @@
               </div>
             </label>
           </div>
-          <label>
+          <label class="form-label">
             Комментарий
-            <textarea name="feedback" placeholder="Введите текст"></textarea>
+            <textarea
+              class="form-textarea"
+              name="feedback"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
           <label class="chekbox">
             <input
@@ -489,12 +493,12 @@
               value="accept"
               required
             />
-            <svg>
+            <svg class="modal-chekbox-icon">
               <use href="./img/symbol-defs.svg#icon-check"></use>
             </svg>
-            <span>
+            <span class="modal-chekbox-text">
               Соглашаюсь с рассылкой и принимаю
-              <a href="#">Условия договора</a>
+              <a href="#" class="modal-chekbox-text-link">Условия договора</a>
             </span>
           </label>
           <button type="submit" class="button">Отправить</button>
